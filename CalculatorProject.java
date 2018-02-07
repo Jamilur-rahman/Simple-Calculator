@@ -16,6 +16,7 @@ public class CalculatorProject{
         //Calculation Codes
         //----------------------------------------------
         for(;;){
+
             System.out.println("SUMMATION CODE = 1   "+ "SBTRACTION CODE = 2   "+
                                "MULTIPLICATION CODE = 3\n" +"DIVISION CODE = 4   " + "AVERAGE CODE = 5   "+
                                "ONLY ADD EVEN CODE = 7 \n" + "ONLY ADD ODD CODE= 8   " +
@@ -26,7 +27,7 @@ public class CalculatorProject{
             System.out.println("Please enter relevent code");
             
             int code= sc.nextInt();
-            
+            if(code==0){
             //summation--------------------------------------------------
             if(code==1){
                 summation.Summ();
@@ -78,6 +79,9 @@ public class CalculatorProject{
                 System.out.println("Please enter a number");
                 double x=sc.nextDouble();
                 algebra.cubert(x);
+
+            }
+            break;
             }
         }        
     }
